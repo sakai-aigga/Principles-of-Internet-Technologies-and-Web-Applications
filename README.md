@@ -33,13 +33,9 @@ You can view the live site at:
    cd your-repo-name
    ```
 3. Open `index.html` in a browser to preview locally.
-4. Deploy using GitHub Pages:
-   - Go to **Settings** > **Pages**
-   - Select the `main` branch and save
-   - Visit `https://your-username.github.io/your-repo-name/`
 
-## 🤝 Contributing
+## Contributing
 Feel free to fork this repository and submit pull requests for improvements!
 
-## 📜 License
-This project is open-source and available under the [MIT License](LICENSE).
+## License
+This project is open-source 😊
