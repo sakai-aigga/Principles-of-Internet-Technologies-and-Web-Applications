@@ -11,7 +11,7 @@ This is a responsive event invitation webpage featuring event details, an RSVP f
 
 ## 🚀 Live Demo
 You can view the live site at:
-[GitHub Pages Link](https://your-username.github.io/your-repo-name/)
+[GitHub Pages Link]([https://your-username.github.io/your-repo-name/](https://sakai-aigga.github.io/Principles-of-Internet-Technologies-and-Web-Applications/))
 
 ## 📂 File Structure
 ```
@@ -24,15 +24,10 @@ You can view the live site at:
 ```
 
 ## 🛠 Setup & Deployment
-1. Clone the repository:
+Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/sakai-aigga/Principles-of-Internet-Technologies-and-Web-Applications
    ```
-2. Navigate to the project folder:
-   ```sh
-   cd your-repo-name
-   ```
-3. Open `index.html` in a browser to preview locally.
 
 ## Contributing
 Feel free to fork this repository and submit pull requests for improvements!
