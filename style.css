@@ -1,0 +1,125 @@
+body {
+    background-image: url("img.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #221e1e;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-image: url("ku.png");
+    background-size: 120px 120px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(129, 80, 207, 0.5);
+}
+
+h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 65px;
+    text-align: center;
+    color: #6144b2;
+}
+
+.event-details {
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.event-details p {
+    margin: 10px 0;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.countdown-timer div {
+    text-align: center;
+    background-color: #6458c1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 9px;
+    width: 80px;
+}
+
+.countdown-timer span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rsvp-form input, .rsvp-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rsvp-form button {
+    background-color: #7851c5;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.rsvp-form button:hover {
+    background-color: #452c98;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+        background-size: 80px 80px;
+        background-position: right top;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+    
+    .countdown-timer {
+        flex-wrap: wrap;
+    }
+    
+    .countdown-timer div {
+        width: 60px;
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .countdown-timer span {
+        font-size: 18px;
+    }
+    
+    .rsvp-form input, .rsvp-form button {
+        font-size: 15px;
+    }
+}
+
+/* Adjust for Landscape Mode */
+@media screen and (orientation: landscape) {
+    .container {
+        max-width: 70%;
+    }
+}

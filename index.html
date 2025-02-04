@@ -1,0 +1,76 @@
+<!-- Event Invitation Page
+Create an event invitation webpage with
+event details, an RSVP form, and a styled
+countdown timer. Use media queries for
+responsiveness
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oleo+Script|Bebas+Neue">
+</head>
+<body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+       const updateTimer = () => {
+           const eventDate = new Date("February 28, 2025 09:00:00").getTime();
+           const now = new Date().getTime();
+           let timeLeft = eventDate - now;
+
+           if (timeLeft < 0) timeLeft = 0;
+
+           const convert = (unit) => Math.floor(timeLeft / unit) % (unit === 1000 * 60 * 60 * 24 ? Infinity : 24);
+           document.getElementById("days").innerText = convert(1000 * 60 * 60 * 24);
+           document.getElementById("hours").innerText = convert(1000 * 60 * 60);
+           document.getElementById("minutes").innerText = convert(1000 * 60);
+           document.getElementById("seconds").innerText = convert(1000);
+       };
+       setInterval(updateTimer, 1000);
+       updateTimer();
+    });
+   </script>
+
+  <div class="container">
+    <h1>R&emsp14;S&emsp14;V&emsp14;P&emsp14;</h1>
+
+    <div class="event-details">
+      <p id="desc"><strong>All students and parents are invited to the annual conference that happens every year at KUSOED. As always, we will have discussions, presentations and demonstrations on different IT and education related subject matter. Your presence will be highly appreciated.</strong></p>
+      <p><strong>Event:</strong> Annual Ed Tech Conference 2025</p>
+      <p><strong>Date:</strong> February 28, 2025</p>
+      <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
+      <p><strong>Location:</strong> BMT building, KUSOED, Hattiban</p>
+    </div>
+
+    <div class="countdown-timer">
+      <div>
+        <span id="days">00</span>
+        Days
+      </div>
+      <div>
+        <span id="hours">00</span>
+        Hours
+      </div>
+      <div>
+        <span id="minutes">00</span>
+        Minutes
+      </div>
+      <div>
+        <span id="seconds">00</span>
+        Seconds
+      </div>
+      <br><br>
+    </div>
+
+    <form class="rsvp-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your active Email" required>
+      <button type="submit">Sign Up Now</button>
+    </form>
+  </div>
+</body>
+</html>
