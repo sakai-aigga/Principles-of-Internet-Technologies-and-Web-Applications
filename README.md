@@ -2,18 +2,18 @@
 
 This is a responsive event invitation webpage featuring event details, an RSVP form, and a countdown timer. The project is hosted using GitHub Pages.
 
-## 🌟 Features
+## Features
 - 📅 Event details section
 - ⏳ Countdown timer
 - 📩 RSVP form
 - 🎨 Styled with CSS for a modern look
 - 📱 Fully responsive (works on mobile & desktop)
 
-## 🚀 Live Demo
+## Live Demo
 You can view the live site at:
 [GitHub Pages Link]([https://your-username.github.io/your-repo-name/](https://sakai-aigga.github.io/Principles-of-Internet-Technologies-and-Web-Applications/))
 
-## 📂 File Structure
+## File Structure
 ```
 📁 event-invitation
 │── 📄 index.html        # Main HTML file
